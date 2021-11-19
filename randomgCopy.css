@@ -1,0 +1,90 @@
+body {
+  background-color: black;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+}
+
+img {
+  width: 60%;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.btn-style {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  border: 0;
+}
+
+.btn-image {
+  height: 400px;
+  width: 400px;
+  text-align: center;
+    }
+
+button:focus {
+  /* To avoid the button border appear */
+  border-color: transparent !important;
+  outline: none;
+}
+
+.box {
+  text-align: left;
+  display: inline-block;
+}
+
+/* To add space between treasure box and image */
+.add-space{
+margin:50px;
+}
+
+.things {
+  text-align: right;
+  display: inline-block;
+}
+
+.img2 {
+  width: 250px;
+  height: 250px;
+}
+
+/* Glowingtext animation */
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+/* Glowingtext animation coding ends */
+
+/* To make images etc. responsive */
+@media screen and (max-width:800px) {
+ .div-class{overflow: scroll;}
+  /* Treasure box */
+  .btn-style{width:80%;height:80%;}
+  .btn-image{width:80%;height:80%;}
+  /* To resize the glowing text  */
+  .container{width:80%;height:80%;}
+  /* To resize the question mark and images */
+  .things{width:60%;height:40%;}
+  .img2{width:40%;height:30%;}
+  .span-link{overflow: scroll;}
+  }
