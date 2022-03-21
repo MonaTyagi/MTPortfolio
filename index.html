@@ -80,7 +80,7 @@
 <div class="top-container">
   <br />
   
-  <p >© 2022 Mona Tyagi</p>
+  <p >© <span id="changingYear"> Mona Tyagi</p>
   <br />
 </div>
 
@@ -89,3 +89,8 @@
 </body>
 
 </html>
+<script>
+const cDate = new Date();
+let y = cDate.getFullYear();
+document.getElementById("changingYear").innerHTML = y;
+</script>
