@@ -41,10 +41,15 @@
 <br />
   <div>
     <br />
-    <p class="footer-text" >© 2022 Mona Tyagi</p>
+    <p class="footer-text" >© <span id="y"><&nbsp;</span> Mona Tyagi</p>
     <br />
   </div>
 
 </body>
 
 </html>
+<script>
+const cDate = new Date();
+let y = cDate.getFullYear();
+document.getElementById("changingYear").innerHTML = y;
+</script>
